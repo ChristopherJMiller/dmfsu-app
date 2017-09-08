@@ -1,23 +1,28 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Navigator, NativeModules, Text } from 'react-native';
 
+import { COLOR, ThemeProvider, Toolbar } from 'react-native-material-ui';
+
+const uiTheme = {
+    palette: {
+        primaryColor: '#CEB888',
+    },
+    toolbar: {
+        container: {
+            height: 70,
+        },
+    },
+}
 export default class App extends React.Component {
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <ThemeProvider uiTheme={uiTheme}>
+        <Toolbar
+          rightElement="menu"
+        />
+        
+      </ThemeProvider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
