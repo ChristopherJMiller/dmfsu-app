@@ -1,7 +1,26 @@
-import React, { Component } from 'react';
-import { Navigator, NativeModules, Text } from 'react-native';
 
-import { COLOR, ThemeProvider, Toolbar } from 'react-native-material-ui';
+import React, { Component } from 'react';
+
+import { ThemeProvider } from 'react-native-material-ui';
+import { DrawerNavigator } from 'react-navigation';
+import { View, StyleSheet } from 'react-native';
+import { Constants } from 'expo';
+
+import { HomeScreen } from './pages/HomeScreen';
+
+import { Navbar } from './partials/Navbar';
+
+
+const MainScreenNavigator = DrawerNavigator(
+  {
+    HomeScreen: { screen: HomeScreen },
+  },
+  {
+    initialRouteName: 'HomeScreen',
+    headerMode: 'none',
+    drawerPosition: 'right'
+  }
+);
 
 const uiTheme = {
     palette: {
@@ -9,19 +28,27 @@ const uiTheme = {
     },
     toolbar: {
         container: {
-            height: 70,
+            height: 40,
         },
     },
-}
-export default class App extends React.Component {
+};
 
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#ffffff',
+    flex: 1,
+  }
+});
+
+export default class App extends React.Component {
   render() {
     return (
       <ThemeProvider uiTheme={uiTheme}>
-        <Toolbar
-          rightElement="menu"
-        />
-        
+        <View style={styles.container}>
+          <Navbar />
+          <MainScreenNavigator />
+        </View>
       </ThemeProvider>
     );
   }
