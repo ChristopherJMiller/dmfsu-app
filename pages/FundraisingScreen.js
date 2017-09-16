@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import styles from '../assets/styles'
 
-export class HomeScreen extends React.Component {
+export class FundraisingScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
+    title: 'Fundraising',
   };
 
   constructor(props) {
@@ -14,7 +13,7 @@ export class HomeScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text style={styles.titleText}>ANNOUNCEMENTS</Text>
+        <Text>Hello, FundraisingScreen!</Text>
       </View>
     );
   }

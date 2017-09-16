@@ -3,17 +3,28 @@ import React, { Component } from 'react';
 
 import { ThemeProvider } from 'react-native-material-ui';
 import { DrawerNavigator } from 'react-navigation';
-import { View, StyleSheet } from 'react-native';
-import { Constants } from 'expo';
+import { View } from 'react-native';
 
 import { HomeScreen } from './pages/HomeScreen';
+import { KidsScreen } from './pages/KidsScreen';
+import { EventsScreen } from './pages/EventsScreen';
+import { FundraisingScreen } from './pages/FundraisingScreen';
+import { AboutScreen } from './pages/AboutScreen';
+import { ConnectScreen } from './pages/ConnectScreen';
 
 import { Navbar } from './partials/Navbar';
+
+import styles from './assets/styles'
 
 
 const MainScreenNavigator = DrawerNavigator(
   {
     HomeScreen: { screen: HomeScreen },
+    KidsScreen: { screen: KidsScreen },
+    EventsScreen: { screen: EventsScreen },
+    FundraisingScreen: { screen: FundraisingScreen },
+    AboutScreen: { screen: AboutScreen },
+    ConnectScreen: { screen: ConnectScreen },
   },
   {
     initialRouteName: 'HomeScreen',
@@ -28,18 +39,10 @@ const uiTheme = {
     },
     toolbar: {
         container: {
-            height: 40,
+            height: 50,
         },
     },
 };
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ffffff',
-    flex: 1,
-  }
-});
 
 export default class App extends React.Component {
   render() {
