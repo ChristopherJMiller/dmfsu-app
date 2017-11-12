@@ -15,7 +15,6 @@ export class HomeScreen extends React.Component {
   render() {
     return (
       <ScrollView>
-      
         <FitImage
             source={require('../assets/photos/homebackground.png')}
             originalWidth={6016}
