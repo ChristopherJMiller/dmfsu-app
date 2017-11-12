@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, ScrollView, Image } from 'react-native';
 import styles from '../assets/styles'
 import FitImage from '../components/FitImage';
 
@@ -14,14 +14,15 @@ export class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
+      <ScrollView>
+      
         <FitImage
-            source={ require('../assets/photos/homebackground.png')}
+            source={require('../assets/photos/homebackground.png')}
             originalWidth={6016}
             originalHeight={4016}
           />
         <Text style={styles.titleText}>ANNOUNCEMENTS</Text>
-      </View>
+      </ScrollView>
     );
   }
 }

@@ -6,6 +6,7 @@ export default class FitImage extends React.Component {
         super(props);
         this.state = this._getSize(props);
     }
+
     _getSize(props) {
         const deviceWidth = Dimensions.get('window').width;
         const deviceHeight = Dimensions.get('window').height;
