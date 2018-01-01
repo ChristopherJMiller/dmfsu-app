@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, Image } from 'react-native';
+import { Text, ScrollView, Image, View } from 'react-native';
 import styles from '../assets/styles'
 import FitImage from '../components/FitImage';
 

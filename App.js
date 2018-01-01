@@ -24,12 +24,15 @@ const MainScreenNavigator = DrawerNavigator(
     EventsScreen: { screen: EventsScreen },
     FundraisingScreen: { screen: FundraisingScreen },
     AboutScreen: { screen: AboutScreen },
-    ConnectScreen: { screen: ConnectScreen },
+    ConnectScreen: { screen: ConnectScreen }
   },
   {
     initialRouteName: 'HomeScreen',
     headerMode: 'none',
-    drawerPosition: 'right'
+    drawerPosition: 'right',
+    drawerOpenRoute: 'DrawerOpen',
+    drawerCloseRoute: 'DrawerClose',
+    drawerToggleRoute: 'DrawerToggle'
   }
 );
 
