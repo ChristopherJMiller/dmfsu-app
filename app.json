@@ -2,9 +2,9 @@
   "expo": {
     "sdkVersion": "21.0.0",
     "android": {
-      "package": "DMFSU Android"
+      "package": "org.dmfsu.app"
     },
-    "name": "dmfsu",
+    "name": "FSU Dance Marathon",
     "slug": "dmfsu",
     "version": "0.1.0",
     "isDetached": true,

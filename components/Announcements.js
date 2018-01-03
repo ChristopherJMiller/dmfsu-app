@@ -32,14 +32,14 @@ export default class FitImage extends React.Component {
   render() {
     if (this.state.isLoading) {
       return (
-        <View style={{flex: 1, paddingTop: 20}}>
+        <View style={{flex: 1, paddingTop: 20, paddingLeft: 10, paddingRight: 10}}>
           <ActivityIndicator />
         </View>
       );
     }
     return (
       <View style={styles.announcementsContainer}>
-        {this.state.announcements != null ? this.state.announcements.map(r => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.annoucnementAuthor}>by {r.author}</Text><Text style={styles.text}>{r.post.trunc(75)}</Text></View>) : null }
+        {this.state.announcements != null ? this.state.announcements.map(r => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{r.post.trunc(100)}</Text></View>) : null }
       </View>
     );
   }

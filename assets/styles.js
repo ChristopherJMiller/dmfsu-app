@@ -20,11 +20,13 @@ export default StyleSheet.create({
   },
   announcementTitle: {
     color: '#ffffffff',
-    fontSize: 24
+    fontSize: 24,
+    textAlign: 'center'
   },
-  announcementAuthor: {
-    color: '#eee',
-    fontSize: 8
+  announcementText: {
+    color: '#ffffffff',
+    fontSize: 16,
+    textAlign: 'center'
   },
   text: {
     color: '#ffffffff'
