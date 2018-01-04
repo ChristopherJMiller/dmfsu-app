@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, FlatList } from 'react-native';
+import KidIcon from '../components/KidIcon';
+import { Kids } from '../components/Kids'
 
 export class KidsScreen extends React.Component {
   static navigationOptions = {
@@ -12,9 +14,12 @@ export class KidsScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        <Text>Hello, Kids!</Text>
-      </View>
+      <FlatList
+        data={Kids}
+        numColumns={2}
+        style={{flex: 1}}
+        renderItem={({item, k}) => <KidIcon kid={item} /> }
+      />
     );
   }
 }
