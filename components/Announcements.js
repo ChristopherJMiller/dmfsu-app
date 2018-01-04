@@ -39,7 +39,7 @@ export default class Announcements extends React.Component {
     }
     return (
       <View style={styles.announcementsContainer}>
-        {this.state.announcements != null ? this.state.announcements.map(r,k => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{r.post}</Text></View>) : null }
+        {this.state.announcements != null ? this.state.announcements.map((r,k) => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{r.post}</Text></View>) : null }
       </View>
     );
   }

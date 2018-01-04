@@ -11,6 +11,12 @@ export default StyleSheet.create({
     paddingLeft: 5,
     paddingRight: 5
   },
+  eventsContainer: {
+    paddingLeft: 5,
+    paddingRight: 5,
+    marginBottom: 5,
+    marginTop: 5
+  },
   titleText: {
     color: '#ffffffff',
     fontSize: 32,
