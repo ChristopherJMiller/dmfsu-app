@@ -8,12 +8,12 @@ String.prototype.trunc = String.prototype.trunc ||
           return (this.length > n) ? this.substr(0, n-1) + '...' : this;
       };
 
-export default class Announcements extends React.Component {
+export default class Events extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      announcements: [],
+      events: [],
       isLoading: true
     };
   }
@@ -22,7 +22,10 @@ export default class Announcements extends React.Component {
     return fetch(this.props.jsonURL)
       .then((response) => response.json())
       .then((responseJson) => {
-        this.setState({announcements: responseJson.announcements, isLoading: false});
+        responseJson.events.sort(function(a,b){
+          return new Date(b.start_time) - new Date(a.start_time);
+        });
+        this.setState({events: responseJson.events, isLoading: false});
       })
       .catch((error) => {
         console.error(error);
@@ -30,6 +33,7 @@ export default class Announcements extends React.Component {
   }
 
   render() {
+    var moment = require('moment-timezone');
     if (this.state.isLoading) {
       return (
         <View style={{flex: 1, paddingTop: 20, paddingLeft: 10, paddingRight: 10}}>
@@ -39,7 +43,7 @@ export default class Announcements extends React.Component {
     }
     return (
       <View style={styles.announcementsContainer}>
-        {this.state.announcements != null ? this.state.announcements.map(r,k => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{r.post}</Text></View>) : null }
+        {this.state.events != null ? this.state.events.map(r,k => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{moment(r.start_time).tz('America/New_York').format("MMM Do h:mm a")} to {moment(r.end_time).tz('America/New_York').format("MMM Do h:mm a")}</Text><Text style={styles.announcementText}>{r.description}</Text></View>) : null }
       </View>
     );
   }

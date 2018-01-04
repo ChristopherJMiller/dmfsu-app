@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView } from 'react-native';
+import Events from '../components/Events';
 
 export class EventsScreen extends React.Component {
   static navigationOptions = {
@@ -12,9 +13,9 @@ export class EventsScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        <Text>Hello, Events!</Text>
-      </View>
+      <ScrollView>
+        <Events jsonURL="http://192.168.1.18:3000/events.json" />
+      </ScrollView>
     );
   }
 }

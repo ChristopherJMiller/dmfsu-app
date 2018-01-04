@@ -19,6 +19,8 @@
     "appcenter-crashes": "^1.1.0",
     "expo": "^21.0.0",
     "material-ui": "^0.19.1",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
     "react": "16.0.0-alpha.12",
     "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.0.tar.gz",
     "react-native-fit-image": "^1.5.2",
