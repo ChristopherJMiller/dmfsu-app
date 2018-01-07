@@ -1,4 +1,10 @@
 {
+    "expo": {
+      "name": "FSU Dance Marathon",
+      "slug": "dmfsu",
+      "sdkVersion": "21.0.0",
+      "privacy": "public"
+    },
     "sdkVersion": "21.0.0",
     "android": {
       "package": "org.dmfsu.app"
