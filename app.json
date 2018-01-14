@@ -5,7 +5,9 @@
       "sdkVersion": "21.0.0",
       "privacy": "public",
       "android": {
-        "package": "org.dmfsu.app"
+        "package": "org.dmfsu.app",
+        "versionCode": 2,
+        "permissions": []
       }
     },
     "sdkVersion": "21.0.0",
