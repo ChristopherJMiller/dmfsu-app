@@ -11,6 +11,7 @@ import { EventsScreen } from './pages/EventsScreen';
 import { FundraisingScreen } from './pages/FundraisingScreen';
 import { AboutScreen } from './pages/AboutScreen';
 import { ConnectScreen } from './pages/ConnectScreen';
+import { DonateScreen } from './pages/DonateScreen';
 
 import { Navbar } from './partials/Navbar';
 
@@ -24,7 +25,8 @@ const MainScreenNavigator = DrawerNavigator(
     EventsScreen: { screen: EventsScreen },
     FundraisingScreen: { screen: FundraisingScreen },
     AboutScreen: { screen: AboutScreen },
-    ConnectScreen: { screen: ConnectScreen }
+    ConnectScreen: { screen: ConnectScreen },
+    DonateScreen: { screen: DonateScreen },
   },
   {
     initialRouteName: 'HomeScreen',
