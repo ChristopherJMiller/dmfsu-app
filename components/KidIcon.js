@@ -21,7 +21,7 @@ export default class KidIcon extends React.Component {
         <TouchableOpacity onPress={this._toggleModal} style={{ alignItems: 'center' }}>
           <Image
               source={this.props.kid.image}
-              style={{flex: 1, borderRadius: 100, resizeMode: 'contain' }}
+              style={{flex: 1, borderRadius: 200, resizeMode: 'contain', width: 196, height: 196 }}
             />
           <Text style={styles.kidNameScreen}>{this.props.kid.name}</Text>
         </TouchableOpacity>
@@ -33,7 +33,7 @@ export default class KidIcon extends React.Component {
           onClose={this._toggleModal}>
           <Image
               source={this.props.kid.image}
-              style={{alignContent:'center'}}
+              style={{alignContent:'center', width: 196, height: 196 }}
             />
           <Text style={styles.kidName}>{this.props.kid.name}</Text>
           <Text style={styles.text}>{this.props.kid.description}</Text>
