@@ -23,7 +23,7 @@ export class HomeScreen extends React.Component {
             originalHeight={4016}
           />
         <Text style={styles.titleText}>ANNOUNCEMENTS</Text>
-        <Announcements jsonURL="http://192.168.1.18:3000/announcements.json" />
+        <Announcements jsonURL="https://app.dmfsu.org/announcements.json" />
       </ScrollView>
     );
   }

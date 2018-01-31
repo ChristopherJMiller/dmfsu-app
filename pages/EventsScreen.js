@@ -14,7 +14,7 @@ export class EventsScreen extends React.Component {
   render() {
     return (
       <ScrollView>
-        <Events jsonURL="http://192.168.1.18:3000/events.json" />
+        <Events jsonURL="https://app.dmfsu.org/events.json" />
       </ScrollView>
     );
   }
