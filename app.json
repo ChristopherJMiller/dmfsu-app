@@ -6,7 +6,7 @@
       "privacy": "public",
       "android": {
         "package": "org.dmfsu.app",
-        "versionCode": 2,
+        "versionCode": 3,
         "permissions": []
       }
     },
