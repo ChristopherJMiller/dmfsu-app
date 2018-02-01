@@ -1,5 +1,26 @@
 {
-  "expo": {
-    "sdkVersion": "20.0.0"
-  }
+    "expo": {
+      "name": "FSU Dance Marathon",
+      "slug": "dmfsu",
+      "sdkVersion": "21.0.0",
+      "privacy": "public",
+      "android": {
+        "package": "org.dmfsu.app",
+        "versionCode": 3,
+        "permissions": []
+      }
+    },
+    "sdkVersion": "21.0.0",
+    "android": {
+      "package": "org.dmfsu.app"
+    },
+    "name": "dmfsu",
+    "displayName": "FSU Dance Marathon",
+    "slug": "dmfsu",
+    "version": "0.1.0",
+    "isDetached": true,
+    "detach": {
+      "scheme": "exp6309452aa181463fabf79615d7ec7d78",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v1.20.0-sdk21.0.0-38791499-fe99-4600-950d-cf7e2e85cea9.tar.gz"
+    }
 }
