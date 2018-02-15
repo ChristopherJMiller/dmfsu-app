@@ -7,7 +7,7 @@
       "icon": "assets/icon.png",
       "android": {
         "package": "org.dmfsu.app",
-        "versionCode": 3,
+        "versionCode": 4,
         "permissions": []
       }
     },
