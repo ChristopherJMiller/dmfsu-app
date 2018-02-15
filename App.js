@@ -12,8 +12,8 @@ import { FundraisingScreen } from './pages/FundraisingScreen';
 import { AboutScreen } from './pages/AboutScreen';
 import { ConnectScreen } from './pages/ConnectScreen';
 import { DonateScreen } from './pages/DonateScreen';
+import Navbar from './partials/Navbar';
 
-import { Navbar } from './partials/Navbar';
 
 import styles from './assets/styles'
 
@@ -54,7 +54,6 @@ export default class App extends React.Component {
     return (
       <ThemeProvider uiTheme={uiTheme}>
         <View style={styles.container}>
-          <Navbar />
           <MainScreenNavigator />
         </View>
       </ThemeProvider>

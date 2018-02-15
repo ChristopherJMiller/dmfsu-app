@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Text, FlatList } from 'react-native';
+import { Text, FlatList, View } from 'react-native';
 import KidIcon from '../components/KidIcon';
 import { Kids } from '../components/Kids'
+import Navbar from '../partials/Navbar';
 
 export class KidsScreen extends React.Component {
   static navigationOptions = {
@@ -18,7 +19,9 @@ export class KidsScreen extends React.Component {
         data={Kids}
         numColumns={2}
         style={{flex: 1}}
-        renderItem={({item, k}) => <KidIcon kid={item} /> }
+        ListHeaderComponent={ <Navbar /> }
+        renderItem={({item, k}) => <KidIcon kid={item} key={k} /> }
+        keyExtractor={(item, index) => index}
       />
     );
   }

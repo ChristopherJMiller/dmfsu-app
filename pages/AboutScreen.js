@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet, Linking } from 'react-native';
 
 import FitImage from '../components/FitImage';
+import Navbar from '../partials/Navbar';
 
 const flexRows = StyleSheet.create({
   rowThirdScreen: {
@@ -44,6 +45,7 @@ export class AboutScreen extends React.Component {
         backgroundColor: '#222',
       }}
     >
+      <Navbar />
       <View
         style={{
           position: 'absolute',

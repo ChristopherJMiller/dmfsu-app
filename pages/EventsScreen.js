@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import Events from '../components/Events';
+import Navbar from '../partials/Navbar';
 
 export class EventsScreen extends React.Component {
   static navigationOptions = {
@@ -13,9 +14,12 @@ export class EventsScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <Events jsonURL="https://app.dmfsu.org/events.json" />
-      </ScrollView>
+      <View>
+        <Navbar />
+        <ScrollView>
+          <Events jsonURL="https://app.dmfsu.org/events.json" />
+        </ScrollView>
+      </View>
     );
   }
 }
