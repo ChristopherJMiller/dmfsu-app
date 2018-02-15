@@ -1,12 +1,13 @@
 {
     "expo": {
-      "name": "FSU Dance Marathon",
+      "name": "Dance Marathon at FSU",
       "slug": "dmfsu",
       "sdkVersion": "21.0.0",
       "privacy": "public",
+      "icon": "assets/icon.png",
       "android": {
         "package": "org.dmfsu.app",
-        "versionCode": 3,
+        "versionCode": 4,
         "permissions": []
       }
     },
@@ -15,7 +16,7 @@
       "package": "org.dmfsu.app"
     },
     "name": "dmfsu",
-    "displayName": "FSU Dance Marathon",
+    "displayName": "Dance Marathon at FSU",
     "slug": "dmfsu",
     "version": "0.1.0",
     "isDetached": true,

@@ -43,7 +43,7 @@ export default class Events extends React.Component {
     }
     return (
       <View style={styles.eventsContainer}>
-        {this.state.events != null ? this.state.events.map((r,k) => <View><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{moment(r.start_time).tz('America/New_York').format("MMM Do h:mm a")} to {moment(r.end_time).tz('America/New_York').format("MMM Do h:mm a")}</Text><Text style={styles.announcementText}>{r.description}</Text></View>) : null }
+        {this.state.events != null ? this.state.events.map((r,k) => <View key={k}><Text style={styles.announcementTitle}>{r.title}</Text><Text style={styles.announcementText}>{moment(r.start_time).tz('America/New_York').format("MMM Do h:mm a")} to {moment(r.end_time).tz('America/New_York').format("MMM Do h:mm a")}</Text><Text style={styles.announcementText}>{r.description}</Text></View>) : null }
       </View>
     );
   }

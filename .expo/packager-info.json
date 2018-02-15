@@ -1,8 +1,8 @@
 {
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "packagerPort": 19001,
+  "packagerPid": 21020,
+  "expoServerPort": 19003,
+  "expoServerNgrokUrl": "https://t2-3kh.christopherjmiller.dmfsu.exp.direct",
+  "packagerNgrokUrl": "https://packager.t2-3kh.christopherjmiller.dmfsu.exp.direct",
+  "ngrokPid": 10344
 }

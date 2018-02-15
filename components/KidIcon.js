@@ -5,7 +5,7 @@ import Overlay from 'react-native-modal-overlay';
 
 import styles from '../assets/modalStyles';
 
-export default class KidIcon extends React.Component {
+export default class KidIcon extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ export default class KidIcon extends React.Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1}} key={this.props.key}>
         <TouchableOpacity onPress={this._toggleModal} style={{ alignItems: 'center' }}>
           <Image
               source={this.props.kid.image}
