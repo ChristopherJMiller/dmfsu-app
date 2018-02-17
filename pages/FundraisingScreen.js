@@ -6,6 +6,8 @@ import FitImage from '../components/FitImage';
 import Overlay from 'react-native-modal-overlay';
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
 
 const textStyles = StyleSheet.create({
   buttons: {
@@ -37,6 +39,7 @@ export class FundraisingScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("Fundraising");
     this.state = {
       isModalVisible: false
     };

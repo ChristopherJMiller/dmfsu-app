@@ -4,6 +4,8 @@ import { Text, View, StyleSheet, Linking } from 'react-native';
 import FitImage from '../components/FitImage';
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
 const flexRows = StyleSheet.create({
   rowThirdScreen: {
     flex: 0.3,
@@ -35,6 +37,7 @@ export class AboutScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("About");
   }
 
   render() {

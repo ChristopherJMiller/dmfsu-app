@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "expo": "^21.0.0",
+    "expo-analytics": "^1.0.6",
     "material-ui": "^0.19.1",
     "moment": "^2.20.1",
     "moment-timezone": "^0.5.14",

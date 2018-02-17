@@ -6,6 +6,7 @@ import { StyleSheet } from 'react-native';
 import SocialMediaIcon from '../components/SocialMediaIcon'
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
 
 const flexRows = StyleSheet.create({
   rowContainers: {
@@ -59,9 +60,7 @@ export class ConnectScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.onPress = () => {
-
-    };
+    Analytics("Connect");
   }
 
   render() {

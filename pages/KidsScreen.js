@@ -4,6 +4,9 @@ import KidIcon from '../components/KidIcon';
 import { Kids } from '../components/Kids'
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
+
 export class KidsScreen extends React.Component {
   static navigationOptions = {
     title: 'Meet The Kids',
@@ -11,6 +14,7 @@ export class KidsScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("Meet the Kids");
   }
 
   render() {

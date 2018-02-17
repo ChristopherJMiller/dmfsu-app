@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { WebView, View } from 'react-native';
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
 export class DonateScreen extends React.Component {
   static navigationOptions = {
     title: 'Donate',
@@ -9,6 +11,7 @@ export class DonateScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("Donate");
   }
 
   render() {

@@ -3,6 +3,8 @@ import { ScrollView, View } from 'react-native';
 import Events from '../components/Events';
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
 export class EventsScreen extends React.Component {
   static navigationOptions = {
     title: 'Events',
@@ -10,6 +12,7 @@ export class EventsScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("Events");
   }
 
   render() {

@@ -5,6 +5,8 @@ import FitImage from '../components/FitImage';
 import Announcements from '../components/Announcements';
 import Navbar from '../partials/Navbar';
 
+import Analytics from '../partials/Analytics'
+
 
 export class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -13,6 +15,7 @@ export class HomeScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    Analytics("Home");
   }
 
   render() {
