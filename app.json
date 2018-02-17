@@ -9,6 +9,9 @@
         "package": "org.dmfsu.app",
         "versionCode": 4,
         "permissions": []
+      },
+      "ios": {
+        "bundleIdentifier": "org.dmfsu.app.ios"
       }
     },
     "sdkVersion": "21.0.0",
